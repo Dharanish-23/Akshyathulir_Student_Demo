@@ -18,7 +18,6 @@ ChartJS.register(
   Tooltip,
   Legend
 );
-
 export default function DashboardOverview() {
   const data = {
     labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],

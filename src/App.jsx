@@ -6,10 +6,11 @@ import FundraisingTracker from "./pages/FundraisingTracker";
 import Profile from "./pages/Profile";
 import TeamManagement from "./pages/TeamManagement";
 import MilestoneTracking from "./pages/MilestoneTracking";
-import InvestorRelations from "./pages/InvestorRelations";
 import ProductRoadmap from "./pages/ProductRoadmap";
 import LegalCompliance from "./pages/LegalCompliance";
 import MyClients from "./pages/MyClients";
+import Schemes from "./pages/Schemes";
+
 
 import { DataProvider } from "./context/DataContext";
 
@@ -75,15 +76,6 @@ function App() {
           />
 
           <Route
-            path="/investors"
-            element={
-              <DashboardLayout>
-                <InvestorRelations />
-              </DashboardLayout>
-            }
-          />
-
-          <Route
             path="/roadmap"
             element={
               <DashboardLayout>
@@ -100,6 +92,16 @@ function App() {
               </DashboardLayout>
             }
           />
+
+          <Route
+            path="/schemes"
+            element={
+              <DashboardLayout>
+                <Schemes />
+              </DashboardLayout>
+            }
+          />
+
         </Routes>
       </BrowserRouter>
     </DataProvider>
